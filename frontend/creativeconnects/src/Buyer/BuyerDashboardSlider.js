@@ -6,6 +6,8 @@ import "../styles/Slider.css";
 export default function BuyerDashboardSlider() {
   const [user, setUser] = useState(null);
   const { slug } = useParams();
+  const [isParagraph, setIsParagraph] = useState(true);
+
 
   useEffect(() => {
     // Retrieve user data from localStorage
@@ -17,6 +19,13 @@ export default function BuyerDashboardSlider() {
       window.location.href = '/';
     }
   }, []);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsParagraph((prev) => !prev);
+    }, 4000); // Toggle every 4 seconds
+    return () => clearInterval(interval);
+  }, []);
+
 
   if (!user) {
     return <p>Loading...</p>;
