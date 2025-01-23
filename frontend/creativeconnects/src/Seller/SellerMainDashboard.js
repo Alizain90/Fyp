@@ -1,7 +1,6 @@
 import React from 'react'
 import React from 'react';
 import Headers from '../components/Header';
-import Slider from '../components/Slider';
 import Footer from '../components/footer';
 import OngoingProjects from '../components/Ongoingprojects';
 import ChatMessage from '../components/ChatMessage';
@@ -10,7 +9,7 @@ import Project from '../components/project'
 import SellerDashboardSlider from './SellerDashboardSlider'
 import '../styles/BuyerDashboard.css'; 
 
-const SellerMainDashboardSlider = () => {
+const SellerMainDashboard = () => {
     return (
         <div className="dashboard-container">
           <div className="header-section">
