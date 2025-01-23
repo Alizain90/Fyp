@@ -2,10 +2,10 @@ import './App.css';
 import  WelcomePage from './pages/Welcome';
 import Registration from './pages/Registration';
 import { Route, Routes } from 'react-router-dom';
-import BuyerDashboard from './Buyer/BuyerDashboard';
-import SellerDashboard from './Seller/SellerDashboard';
+import BuyerDashboard from './Buyer/BuyerMainDashboard';
+import SellerDashboard from './Seller/SellerMainDashboard';
 import ProtectedRoute from './ProtectedRoute';
-import SkillSwapperDashboard from './Swapper/SkillSwapperDashboard';
+import SkillSwapperDashboard from './Swapper/SkillSwapperMainDashboard';
 
 
 function App() {
