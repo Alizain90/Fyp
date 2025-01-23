@@ -7,7 +7,6 @@ import ChatMessage from '../components/ChatMessage';
 import Stats from '../components/Stats';
 import Proposal from '../components/Proposal';
 import BuyerDashboardSlider from './BuyerDashboardSlider'
-import Project from '../components/project';
 import '../styles/BuyerDashboard.css'; // Add a CSS file for styling
 
 const BuyerMainDashboard = () => {
