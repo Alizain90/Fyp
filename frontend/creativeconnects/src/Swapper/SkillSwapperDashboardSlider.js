@@ -5,9 +5,11 @@ import "../styles/Slider.css";
 
 
 
-export default function SkillSwapperDashboard() {
+export default function SkillSwapperDashboardSlider() {
     const [user, setUser] = useState(null);
     const { slug } = useParams();
+    const [isParagraph, setIsParagraph] = useState(true);
+
 
   useEffect(() => {
     // Retrieve user data from localStorage
@@ -18,6 +20,12 @@ export default function SkillSwapperDashboard() {
       // Redirect to login if no user is found
       window.location.href = '/';
     }
+  }, []);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsParagraph((prev) => !prev);
+    }, 4000); // Toggle every 4 seconds
+    return () => clearInterval(interval);
   }, []);
 
   if (!user) {
