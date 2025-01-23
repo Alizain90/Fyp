@@ -3,9 +3,12 @@ import { useParams } from 'react-router-dom';
 import "../styles/Slider.css";
 
 
-function SellerDashboard() {
+function SellerDashboardSlider() {
 const [user, setUser] = useState(null);
 const { slug } = useParams();
+const [isParagraph, setIsParagraph] = useState(true);
+
+
 useEffect(() => {
   // Retrieve user data from localStorage
   const storedUser = JSON.parse(localStorage.getItem('user'));
@@ -15,6 +18,12 @@ useEffect(() => {
     // Redirect to login if no user is found
     window.location.href = '/';
   }
+}, []);
+useEffect(() => {
+  const interval = setInterval(() => {
+    setIsParagraph((prev) => !prev);
+  }, 4000); // Toggle every 4 seconds
+  return () => clearInterval(interval);
 }, []);
 
 if (!user) {
@@ -51,4 +60,4 @@ if (!user) {
   )
 }
 
-export default SellerDashboard
+export default SellerDashboardSlider
