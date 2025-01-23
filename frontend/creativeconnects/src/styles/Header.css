@@ -1,0 +1,39 @@
+/* Header.css */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 100px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-right: 10px;
+  }
+  
+  .search-bar input {
+    width: 700px;
+    margin: 0px 30px;
+    padding: 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+  }
+  
+
+  
+
+
+ 
+  
+  

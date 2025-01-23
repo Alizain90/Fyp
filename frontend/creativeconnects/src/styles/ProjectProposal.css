@@ -1,0 +1,77 @@
+.JobDescription {
+    margin-left: 100px;
+    display: flex; /* Enables flexbox for layout */
+    justify-content: flex-start; /* Aligns content to the left */
+    align-items: flex-start; /* Aligns content to the top */
+    flex-direction: column; /* Stacks elements vertically */
+    gap: 10px; /* Controls the spacing between elements */
+    width: 60%; /* Sets the width to 70% of the parent container */
+}
+
+.jobinfo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Takes the full width of the container */
+    gap: 85px;
+}
+
+.dropdown {
+    margin-top: 0; /* Removes unnecessary spacing */
+    width: 100%; /* Adjusts to parent container */
+    max-width: 350px; /* Sets a maximum width */
+    padding: 10px 20px; /* Reduces padding for a cleaner look */
+    border: 2px solid #ccc;    
+    border-radius: 5px;        
+    background-color: #f9f9f9; 
+    color: #333;               
+    font-size: 16px;           
+    cursor: pointer;           
+}
+
+.dropdown option {
+    background-color: #f9f9f9;
+    color: #555;
+}
+
+.dropdown option:hover {
+    background-color: #d0f0d0;
+    color: #555;
+}
+
+.dropdown option:focus {
+    background-color: #d0f0d0;
+    color: #00796b;
+}
+
+.button {
+    margin: 5px; /* Reduces spacing around buttons */
+    padding: 10px 20px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.projectinput {
+    width: 100%; /* Adjusts to parent container width */
+    max-width: 1000px; /* Sets a maximum width */
+    height: 100px; /* Reduces height for a cleaner design */
+    margin: 5px auto; /* Centers the input element with less spacing */
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    font-size: 18px;
+    outline: none;
+    transition: border-color 0.3s;
+    text-align: left;
+    border-color: #00796b;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 0 0 5px rgba(25, 149, 173, 0.5);
+}
+
+.projectbutton {
+    margin-top: 10px;
+    width: auto; /* Adjusts the button width to content */
+    align-self: flex-start; /* Align the button to the left */
+}

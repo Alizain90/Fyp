@@ -1,0 +1,68 @@
+/* Apply general styling for the dashboard container */
+.dashboard-container {
+  margin: 0 auto;
+  background-color: #ffff; /* Light background for better aesthetics */
+}
+
+/* Header and Footer sections styling */
+
+
+/* Slider section styling */
+.slider-section {
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Content container for the middle section */
+.content-container {
+  display: flex;
+  gap: 20px;
+  margin: 0 20px;
+  height: 750px;
+  max-width: 1380px;
+}
+
+/* Proposal column styling */
+.proposal-column {
+  flex: 2;
+  padding: 20px;
+  background: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  max-width: 900px;
+}
+
+/* Stats column styling */
+.stats-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 60%;
+}
+
+.stats-column > div {
+  padding: 15px;
+  background: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 0px;
+}
+
+/* Chat section styling */
+
+
+/* Ongoing projects section styling */
+.projects-section {
+  padding: 20px;
+  background: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+  justify-content: space-between;
+}
+
+
