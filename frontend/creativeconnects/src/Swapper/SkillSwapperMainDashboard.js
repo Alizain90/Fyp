@@ -10,7 +10,7 @@ import SkillSwapperDashboardSlider from './SkillSwapperDashboardSlider'
 import Project from '../components/project';
 import '../styles/BuyerDashboard.css'; // Add a CSS file for styling
 
-const SkillSwapperMainDashboardSlider = () => {
+const SkillSwapperMainDashboard = () => {
     return (
         <div className="dashboard-container">
           <div className="header-section">
